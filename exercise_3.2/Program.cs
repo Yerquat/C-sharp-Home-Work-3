@@ -13,3 +13,13 @@ int EnterData(string text)
     int number = int.Parse(Console.ReadLine());
     return number;
 }
+
+int x1 = EnterData("Введите координату X1 ");
+int y1 = EnterData("Введите координату Y1 ");
+int z1 = EnterData("Введите координату Z1 ");
+int x2 = EnterData("Введите координату X2 ");
+int y2 = EnterData("Введите координату Y2 ");
+int z2 = EnterData("Введите координату Z2 ");
+
+double result = distance( x1, y1, z1, x2, y2, z2);
+Console.WriteLine($"Расстояние = {result}");
